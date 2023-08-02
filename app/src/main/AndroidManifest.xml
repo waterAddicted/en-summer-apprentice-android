@@ -15,10 +15,10 @@
         <activity
             android:name="com.events_management.ticketmangmenta.app.MainActivity"
             android:exported="true">
-            <insert-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </insert-filter>
+            </intent-filter>
         </activity>
     </application>
 

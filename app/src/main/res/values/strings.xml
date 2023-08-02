@@ -1,3 +1,8 @@
 <resources>
+    <string name="select">Select an item</string>
     <string name="app_name">TicketMangmentaApp</string>
+    <string-array name="dropdown_options">
+        <item>Dashboard</item>
+        <item>Orders</item>
+    </string-array>
 </resources>
