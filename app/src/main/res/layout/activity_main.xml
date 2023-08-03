@@ -34,6 +34,26 @@
 
 
         </com.google.android.material.textfield.TextInputLayout>
+        <!-- TextView pentru afișarea numelui -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <!-- TextView pentru afișarea descrierii (opțional) -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!-- ImageView pentru afișarea imaginii (opțional) -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
         <Button
             android:id="@+id/btn_add_event"
@@ -49,6 +69,10 @@
             android:layout_height="wrap_content"
             android:hint="Search Event"
             android:visibility="gone" /> <!-- Setăm vizibilitatea inițială pe gone -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_cards_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
