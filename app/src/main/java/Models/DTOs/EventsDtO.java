@@ -1,15 +1,15 @@
 package Models.DTOs;
 public class EventsDtO{
-    private String name;
-    private String description;
+    private String eventName;
+    private String eventDescription;
     private int imageName; // Câmp pentru numele imaginii
 
     private String TicketCategory;
 
     private int numberOfTickets;
-    public EventsDtO(String name, String description, int imageName,String ticketCategory,int numberOfTickets) {
-        this.name = name;
-        this.description = description;
+    public EventsDtO(String eventName, String eventDescription, int imageName,String ticketCategory,int numberOfTickets) {
+        this.eventName = eventName;
+        this.eventDescription = eventDescription;
         this.imageName = imageName;
         this.TicketCategory = ticketCategory;
         this.numberOfTickets = numberOfTickets;
@@ -18,19 +18,19 @@ public class EventsDtO{
     // Getters și setters pentru a accesa și seta valorile câmpurilor.
 
     public String getEventName() {
-        return name;
+        return eventName;
     }
 
     public void setEventName(String name) {
-        this.name = name;
+        this.eventName = name;
     }
 
     public String getEventDescription() {
-        return description;
+        return eventDescription;
     }
 
     public void setEventDescription(String description) {
-        this.description = description;
+        this.eventDescription = description;
     }
 
     public int getImageName() {

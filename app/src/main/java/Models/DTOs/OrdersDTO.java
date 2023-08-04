@@ -3,44 +3,44 @@ package Models.DTOs;
 import java.util.Date;
 
 public class OrdersDTO {
-    private long orderID;
-    private String customerName;
-    private String ticketCategoryDescription;
+    private long orderId;
+    private String userName;
+    private String description;
     private Date orderedAt;
     private int numberOfTickets;
     private int totalPrice;
 
-    public OrdersDTO(long orderID, String customerName, String ticketCategoryDescription, Date orderedAt, int numberOfTickets, int totalPrice) {
-        this.orderID = orderID;
-        this.customerName = customerName;
-        this.ticketCategoryDescription = ticketCategoryDescription;
+    public OrdersDTO(long orderId, String userName, String description, Date orderedAt, int numberOfTickets, int totalPrice) {
+        this.orderId = orderId;
+        this.userName = userName;
+        this.description = description;
         this.orderedAt = orderedAt;
         this.numberOfTickets = numberOfTickets;
         this.totalPrice = totalPrice;
     }
 
     public long getOrderID() {
-        return orderID;
+        return orderId;
     }
 
     public void setOrderID(long orderID) {
-        this.orderID = orderID;
+        this.orderId = orderID;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getuserName() {
+        return userName;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public void setuserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getTicketCategoryDescription() {
-        return ticketCategoryDescription;
+    public String getdescription() {
+        return description;
     }
 
-    public void setTicketCategoryDescription(String ticketCategoryDescription) {
-        this.ticketCategoryDescription = ticketCategoryDescription;
+    public void setdescription(String description) {
+        this.description = description;
     }
 
     public Date getOrderedAt() {
